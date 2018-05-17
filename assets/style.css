@@ -14,7 +14,11 @@ body {
     position:fixed;
     top: 2%;
     left: 2%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     border: white solid 2pt ;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    padding: 10px;
+    text-align: center;
 
 }
