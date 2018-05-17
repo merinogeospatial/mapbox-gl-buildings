@@ -15,11 +15,14 @@
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.2.0/mapbox-gl-geocoder.css' type='text/css' /> 
 
     <div id='map'></div>
+    <div id="name-plate">
+        <img id="logo" src="assets/merino-logo.png" alt="MerinoGeospatial Logo" height="60px" width="250px">
+    </div>
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm1lcmlubyIsImEiOiJjamZpOHFzaGQwM2p5MzNtcXI5c251a2dlIn0.XRFhUVODMYz4Js_gIkO31g';
 var map = new mapboxgl.Map({
-    style: 'mapbox://styles/rmerino/cjh0opxgx000t2rpfr0bf13j5',
+    style: 'mapbox://styles/rmerino/cjfpkop0e44ta2rqxdew6xqph',
     center: [-78.637203, 35.777549],
     zoom: 15.7,
     pitch: 60,
@@ -50,7 +53,7 @@ map.on('load', function() {
         'type': 'fill-extrusion',
         'minzoom': 15,
         'paint': {
-            'fill-extrusion-color': 'red',
+            'fill-extrusion-color': 'yellow',
             // use an 'interpolate' expression to add a smooth transition effect to the
             // buildings as the user zooms in
             'fill-extrusion-height': [
@@ -63,7 +66,7 @@ map.on('load', function() {
                 15, 0,
                 15.05, ["get", "min_height"]
             ],
-            'fill-extrusion-opacity': .7
+            'fill-extrusion-opacity': .5
         }
     }, labelLayerId);
 });

@@ -9,3 +9,12 @@ body {
     bottom:0;
     width:100%;
 }
+
+#name-plate {
+    position:fixed;
+    top: 2%;
+    left: 2%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: white solid 2pt ;
+
+}
