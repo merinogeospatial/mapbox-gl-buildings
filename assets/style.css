@@ -20,5 +20,12 @@ body {
     font-family: 'Acme', sans-serif;
     padding: 10px;
     text-align: center;
-
 }
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    #name-plate { display: none; }  /* show it on small screens */
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    #name-plate { display: block; }   /* hide it elsewhere */
+  }
